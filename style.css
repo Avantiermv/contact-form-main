@@ -17,4 +17,7 @@
 
 body{
     background-color: var(--lgreen);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

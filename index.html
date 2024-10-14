@@ -12,9 +12,37 @@
   <div id="container">
     <div id="content">
       <h1>Contact Us</h1>
+      <div id="name">
+        <label for="firstname">First Name *</label>
+        <input type="text" name="firstname" id="firstname">
+        <label for="lastname">Last Name *</label>
+        <input type="text" name="lastname" id="lastname">
+      </div>
+      <div id="email">
+        <label for="emailadress">Email Adress *</label>
+        <input type="email" name="emailadress" id="emailadress">
+      </div>
+      <div id="querytype">
+        <p>Query Type *</p>
+        <div class="radiobox">
+          <input type="radio" name="generalenquiry" id="generalenquiry">
+          <label for="generalenquiry">General Equiry</label>
+        </div>
+        <div class="radiobox">
+          <input type="radio" name="supportrequest" id="supportrequest">
+          <label for="supportrequest">Support Request</label>
+        </div>
+      </div>
+      <div id="msgbox">
+        <label for="messagebox">Message *</label>
+        <input type="text" name="messagebox" id="messagebox">
+      </div>
+      <input type="radio" name="consent" id="consent">
+      <label for="consent">I consent to being contacted by the team</label>
+      <input type="button" value="Submit" onclick="start()">
     </div>
   </div>
   
-  
+  <script src="logic.js"></script>
 </body>
 </html>
