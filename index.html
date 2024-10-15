@@ -13,13 +13,16 @@
     <div id="content">
       <h1>Contact Us</h1>
       <div id="name">
-        <label for="firstname">First Name *</label>
+        <label for="firstname">First Name *</label> <br>
         <input type="text" name="firstname" id="firstname">
+        <br>
         <label for="lastname">Last Name *</label>
+        <br>
         <input type="text" name="lastname" id="lastname">
       </div>
       <div id="email">
         <label for="emailadress">Email Adress *</label>
+        <br>
         <input type="email" name="emailadress" id="emailadress">
       </div>
       <div id="querytype">
@@ -35,11 +38,14 @@
       </div>
       <div id="msgbox">
         <label for="messagebox">Message *</label>
+        <br>
         <input type="text" name="messagebox" id="messagebox">
       </div>
-      <input type="radio" name="consent" id="consent">
-      <label for="consent">I consent to being contacted by the team</label>
-      <input type="button" value="Submit" onclick="start()">
+      <div id="boxconsent">
+        <input type="radio" name="consent" id="consent">
+        <label for="consent">I consent to being contacted by the team</label>
+      </div>
+      <div id="boxsubmit"><input type="button" value="Submit" id="submit"onclick="start()"></div>
     </div>
   </div>
   

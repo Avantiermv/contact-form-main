@@ -21,3 +21,115 @@ body{
     flex-direction: column;
     align-items: center;
 }
+
+
+
+div#container{
+    background-color: var(--white);
+    width: 360px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+div#content{
+    width: 335px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    margin: 10px;
+}
+
+div#name{
+    margin: 10px;
+}
+
+input#firstname{
+    width: 295px;
+    margin: 10px;
+    padding: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: var(--green);
+}
+
+input#lastname{
+    width: 295px;
+    margin: 10px;
+    padding: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: var(--green);
+}
+
+div#email{
+    margin: 10px;
+}
+
+input#emailadress{
+    width: 295px;
+    margin: 10px;
+    padding: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: var(--green);
+}
+
+div#querytype{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+div.radiobox{
+    padding: 10px;
+    margin: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: var(--green);
+}
+
+div#msgbox{
+    margin: 10px;
+}
+
+input#messagebox{
+    width: 295px;
+    height: 300px;
+    margin: 10px;
+    padding: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: var(--green);
+}
+
+div#boxconsent{
+    margin: 10px;
+}
+
+input#consent{
+    margin: 10px;
+    padding: 5px;
+}
+
+div#boxsubmit{
+    margin: 20px;
+}
+
+input#submit{
+    width: 300px;
+    margin: 5px;
+    padding: 20px;
+}
