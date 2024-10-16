@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
 
 *{
     margin: 0px;
@@ -13,6 +14,7 @@
  --white: hsl(0, 0%, 100%);
  --lgreen: hsl(186, 15%, 59%);
  --dgreen: hsl(187, 24%, 22%);
+ --font: "Karla", sans-serif;
 }
 
 body{
@@ -20,9 +22,8 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: var(--font);
 }
-
-
 
 div#container{
     background-color: var(--white);
@@ -117,6 +118,7 @@ input#messagebox{
 
 div#boxconsent{
     margin: 10px;
+    display: flex;
 }
 
 input#consent{
@@ -132,4 +134,10 @@ input#submit{
     width: 300px;
     margin: 5px;
     padding: 20px;
+
+    border: 1px solid var(--green);
+    border-radius: 10px;
+    background-color: var(--green);
+    color: var(--nwhite);
+    font-size: 18px;
 }
