@@ -14,35 +14,35 @@
       <h1>Contact Us</h1>
       <div id="name">
         <label for="firstname">First Name *</label> <br>
-        <input type="text" name="firstname" id="firstname">
+        <input type="text" name="firstname" id="firstname" required>
         <br>
         <label for="lastname">Last Name *</label>
         <br>
-        <input type="text" name="lastname" id="lastname">
+        <input type="text" name="lastname" id="lastname" required>
       </div>
       <div id="email">
         <label for="emailadress">Email Adress *</label>
         <br>
-        <input type="email" name="emailadress" id="emailadress">
+        <input type="email" name="emailadress" id="emailadress" required>
       </div>
       <div id="querytype">
         <p>Query Type *</p>
         <div class="radiobox">
-          <input type="radio" name="generalenquiry" id="generalenquiry">
+          <input type="radio" name="querytype" id="generalenquiry" required>
           <label for="generalenquiry">General Equiry</label>
         </div>
         <div class="radiobox">
-          <input type="radio" name="supportrequest" id="supportrequest">
+          <input type="radio" name="querytype" id="supportrequest" required>
           <label for="supportrequest">Support Request</label>
         </div>
       </div>
       <div id="msgbox">
         <label for="messagebox">Message *</label>
         <br>
-        <input type="text" name="messagebox" id="messagebox">
+        <textarea name="messagebox" id="messagebox" required></textarea>
       </div>
       <div id="boxconsent">
-        <input type="radio" name="consent" id="consent">
+        <input type="checkbox" name="consent" id="consent"  required>
         <label for="consent">I consent to being contacted by the team</label>
       </div>
       <div id="boxsubmit"><input type="button" value="Submit" id="submit"onclick="start()"></div>
