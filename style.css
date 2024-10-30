@@ -76,7 +76,7 @@ div#email{
     margin: 10px;
 }
 
-input#emailadress{
+input#emailaddress{
     width: 295px;
     margin: 10px;
     padding: 5px;
@@ -140,4 +140,11 @@ input#submit{
     background-color: var(--green);
     color: var(--nwhite);
     font-size: 18px;
+    cursor: pointer;
+}
+
+input#submit:hover{
+    background-color: var(--lgreen);
+    color: var(--dgreen);
+    transition: 0.5s;
 }
