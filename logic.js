@@ -1,9 +1,9 @@
-let firstname = document.getElementById('firstname');
-let lastname = document.getElementById('lastname');
-let addressemail = document.getElementById('emailaddress');
+const firstname = document.getElementById('firstname');
+const lastname = document.getElementById('lastname');
+const addressemail = document.getElementById('emailaddress');
 
 
 
 function start(){
-    
+   
 }
