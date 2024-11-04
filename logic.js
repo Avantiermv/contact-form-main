@@ -4,6 +4,7 @@ const inputsname = [
 ];
 const regex = /^[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$/;
 const emailadress = document.getElementById('emailadress');
+const span = document.getElementsByTagName('span');
 
 
 
@@ -17,12 +18,12 @@ function start(){
   for(let i=0;i<inputsname.length;i++){
     let input = inputsname[i];
     if(input.element.value === ''){
-        window.alert(`${input.name} não está preenchido`);
+        input.element.style.borderColor="red";
     }
   }
 
   if(validateEmail(emailadress.value) == ''){
-    window.alert("Volte lá e faça de novo o email");
+    emailadress.style.borderColor="red";
   }else if(validateEmail(emailadress.value) == false){
     window.alert("Email digitado erradamente");
   }

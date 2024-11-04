@@ -86,6 +86,10 @@ input#emailaddress{
     border-color: var(--green);
 }
 
+span{
+    display: block;
+}
+
 div#querytype{
     margin: 10px;
     display: flex;
