@@ -4,6 +4,8 @@ const inputsname = [
 ];
 const emailadress = document.getElementById('emailaddress');
 const spans = document.getElementsByTagName('span');
+const query1 = document.getElementById('generalenquiry');
+const query2 = document.getElementById('supportrequest');
 
 function start(){
 
@@ -26,14 +28,19 @@ function start(){
         span.style.color="red"
     }
 
-  
     if(emailadress.value === '' || !validateEmail(emailadress.value)){
       emailadress.style.borderColor="red"; 
       span.style.color="red";
     }
+ 
+   if(!query1.checked || !query2.checked){
+     span.style.color="red";
+     window.alert("Bolinha nãp preenchdia");
+   }
+
+
   }
 
- 
 
  
   
