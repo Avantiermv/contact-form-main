@@ -2,11 +2,8 @@ const inputsname = [
     {element: document.getElementById('firstname'), name: 'First Name'},
     {element: document.getElementById('lastname'), name: 'Last Name'}
 ];
-const regex = /^[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$/;
-const emailadress = document.getElementById('emailadress');
-const span = document.getElementsByTagName('span');
-
-
+const emailadress = document.getElementById('emailaddress');
+const spans = document.getElementsByTagName('span');
 
 function start(){
 
@@ -15,18 +12,28 @@ function start(){
     return regex.test(email);
   }
 
+  function validateName(name){
+    const regex = /^[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ]+$/;
+    return regex.test(name);
+  }
+
   for(let i=0;i<inputsname.length;i++){
     let input = inputsname[i];
-    if(input.element.value === ''){
+    let span = spans[i];
+
+    if(input.element.value === '' || !validateName(input.element.value)){
         input.element.style.borderColor="red";
+        span.style.color="red"
+    }
+
+  
+    if(emailadress.value === '' || !validateEmail(emailadress.value)){
+      emailadress.style.borderColor="red"; 
+      span.style.color="red";
     }
   }
 
-  if(validateEmail(emailadress.value) == ''){
-    emailadress.style.borderColor="red";
-  }else if(validateEmail(emailadress.value) == false){
-    window.alert("Email digitado erradamente");
-  }
+ 
 
  
   
