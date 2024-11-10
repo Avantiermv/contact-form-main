@@ -96,6 +96,12 @@ span{
     color: var(--green);
 }
 
+.spanError{
+    display: none;
+    padding: 5px;
+    font-size: 15px;
+}
+
 div#querytype{
     margin: 10px;
     display: flex;

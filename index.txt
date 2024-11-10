@@ -13,13 +13,13 @@
   Query Type
   General Enquiry
   Support Request
-  Please select a query type
+ 
 
   Message
-  This field is required
+ 
 
   I consent to being contacted by the team
-  To submit this form, please consent to being contacted
+  
 
   Submit
 
