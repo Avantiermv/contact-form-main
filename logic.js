@@ -3,8 +3,6 @@ const inputsname = [
     {element: document.getElementById('lastname'), name: 'Last Name'}
 ];
 const emailaddress = document.getElementById('emailaddress');
-const spans = document.getElementsByTagName('span');
-const spanError = document.getElementsByClassName('spanError');
 const query1 = document.getElementById('generalenquiry');
 const query2 = document.getElementById('supportrequest');
 const queryspanerror = document.getElementById('queryspanerror');
@@ -25,20 +23,18 @@ function start(){
   let hasError = false;
 
   for(let i=0;i<inputsname.length;i++){
-    let input = inputsname[i];
 
-    let span = input.element.nextElementSibling;
+    let span = document.getElementsByClassName('namespan');
     if(input.element.value === '' || !validateName(input.element.value)){
         input.element.style.borderColor="red";
         span.style.color="red";
-        span.style.display="Block";
         hasError = true;
     }else{
       input.element.style.borderColor="";
       span.style.color="";
     }
 
-    let emailSpan = emailaddress.nextElementSibling;
+    let emailSpan = document.getElementById('emailspan');
     if(emailaddress.value === '' || !validateEmail(emailaddress.value)){
       emailaddress.style.borderColor="red"; 
       emailSpan.style.color="red";
@@ -49,8 +45,7 @@ function start(){
       emailSpan.style.color="";
     }
  
-    let querySpan = spans[inputsname.length];
-    let queryerror = queryspanerror;
+    let querySpan = document.getElementById('queryspan');
     if(!query1.checked || !query2.checked){
       querySpan.style.color="red";
       queryerror.style.display="block";
@@ -59,18 +54,16 @@ function start(){
       querySpan.style.color="";
     } 
 
-    let msgSpan = document.getElementById('messagebox').nextElementSibling;
+    let msgspan = document.getElementById('msgspan');
     if(msg.value === ''){
-      msg.style.borderColor="red";
-      msgSpan.style.color="red";
-      msgSpan.style.display="block";
+      msgspan.style.color="red";
       hasError = true;
     }else{
       msg.style.borderColor="";
-      msgSpan.style.color="";
+      msgspan.style.color="";
     }
 
-    let consentSpan = consent.nextElementSibling.nextElementSibling;
+    let consentSpan = document.getElementById('consentspan');
     if(!consent.checked){
       consent.style.borderColor="red";
       consentSpan.style.color="red";
@@ -82,7 +75,9 @@ function start(){
     }
   }
 
-
+  if(!hasError){
+    window.alert("Tudo certo");
+  }
  
   
 }
