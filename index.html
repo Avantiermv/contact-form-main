@@ -13,15 +13,15 @@
     <div id="content">
       <h1>Contact Us</h1>
       <div id="name">
-        <label for="firstname">First Name<span id="namespan">*</span></label> 
-        <input type="text" name="firstname" id="firstname" minlength="2" maxlength="11"> <span class="spanError">This field is required</span>
+        <label for="firstname">First Name<span class="namespan">*</span></label> 
+        <input type="text" name="firstname" id="firstname" minlength="2" maxlength="11"> <span class="spanErrorName">This field is required</span>
         <label for="lastname">Last Name<span class="namespan">*</span></label>
-        <input type="text" name="lastname" id="lastname" required> <span class="spanError">This field is required</span>
+        <input type="text" name="lastname" id="lastname" required> <span class="spanErrorName">This field is required</span>
       </div>
       <div id="email">
         <label for="emailadress">Email Adress<span id="emailspan">*</span></label>
         <input type="email" name="emailaddress" id="emailaddress" required>
-        <span class="spanError">This field is required</span>
+        <span>This field is required</span>
       </div>
       <div id="querytype">
         <label for="radiobox">Query Type<span id="queryspan">*</span></label>
@@ -33,17 +33,17 @@
           <input type="radio" name="querytype" id="supportrequest" required>
           <label for="supportrequest">Support Request</label>
         </div>
-        <span class="spanError" id="queryspanerror">Please select a query type</span>
+        <span>Please select a query type</span>
       </div>
       <div id="msgbox">
         <label for="messagebox">Message<span id="msgspan">*</span></label>
         <textarea name="messagebox" id="messagebox" required></textarea>
-        <span class="spanError">This field is required</span>
+        <span>This field is required</span>
       </div>
       <div id="boxconsent">
         <input type="checkbox" name="consent" id="consent"  required>
         <label for="consent">I consent to being contacted by the team <span id="consentspan">*</span></label>
-        <span class="spanError">To submit this form, please consent to being contacted</span>
+        <span>To submit this form, please consent to being contacted</span>
       </div>
       <div id="boxsubmit">
         <input type="button" value="Submit" id="submit" onclick="start()"></div>

@@ -96,7 +96,7 @@ span{
     color: var(--green);
 }
 
-.spanError{
+.spanErrorName{
     display: none;
     padding: 5px;
     font-size: 15px;
