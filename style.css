@@ -96,7 +96,7 @@ span{
     color: var(--green);
 }
 
-.spanErrorName{
+.spanErrorName, #spanemail, #spantextquery, #spantextmsg, #spantextconsent{
     display: none;
     padding: 5px;
     font-size: 15px;

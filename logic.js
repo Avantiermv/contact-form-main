@@ -19,10 +19,10 @@ function start(){
     return regex.test(name);
   }
 
-  let hasError = false;
+let hasError = false;
   
- 
  for(let input of inputsname){
+
   let spansn = document.getElementsByClassName('namespan');
   let spanErrorName = document.getElementsByClassName('spanErrorName');
   if(input.element.value.trim() === '' || !validateName(input.element.value)){
@@ -46,47 +46,64 @@ function start(){
       spanN.style.color="";
     }
   }
+
  }
 
  let spane = document.getElementById('emailspan');
-  if(emailaddress.value.trim() === '' || !validateEmail(emailaddress)){
+ let spantextemail = document.getElementById('spanemail')
+  if(emailaddress.value.trim() === '' || !validateEmail(emailaddress.value)){
     emailaddress.style.borderColor="red";
     spane.style.color="red";
+    spantextemail.style.color="red";
+    spantextemail.style.display="block"
     hasError = true;
   }else{
     emailaddress.style.borderColor="";
     spane.style.color="";
+    spantextemail.style.color="";
+    spantextemail.style.display=""
   }
 
- let spanq = document.getElementById('queryspan');
-  if(!query1.checked || !query2.checked){
+  let spanq = document.getElementById('queryspan');
+  let spantextq = document.getElementById('spantextquery');
+  if(!query1.checked && !query2.checked){
     spanq.style.color="red";
+    spantextq.style.color="red";
+    spantextq.style.display="block";
     hasError = true;
   }else{
     spanq.style.color="";
+    spantextq.style.color="";
+    spantextq.style.display="";
   }
 
+  let spanmsg = document.getElementById('msgspan');
+  let spantextmsg = document.getElementById('spantextmsg');
+  if(msg.value === ''){
+    msg.style.borderColor="red";
+    spanmsg.style.color="red";
+    spantextmsg.style.color="red";
+    spantextmsg.style.display="block";
+    hasError = true;
+  }else{
+    msg.style.borderColor="";
+    spanmsg.style.color="";
+    spantextmsg.style.color="";
+    spantextmsg.style.display="";
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  let spanconsent = document.getElementById('consentspan');
+  let spantextconsent = document.getElementById('spantextconsent');
+  if(!consent.checked){
+    spanconsent.style.color="red";
+    spantextconsent.style.color="red";
+    spantextconsent.style.display="block";
+    hasError = true;
+  }else{
+    spanconsent.style.color="";
+    spantextconsent.style.color="";
+    spantextconsent.style.display="";
+  }
 
   if(hasError == false){
     window.alert("Tudo certo");

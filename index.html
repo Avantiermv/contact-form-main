@@ -21,7 +21,7 @@
       <div id="email">
         <label for="emailadress">Email Adress<span id="emailspan">*</span></label>
         <input type="email" name="emailaddress" id="emailaddress" required>
-        <span>This field is required</span>
+        <span id="spanemail">This field is required</span>
       </div>
       <div id="querytype">
         <label for="radiobox">Query Type<span id="queryspan">*</span></label>
@@ -33,17 +33,17 @@
           <input type="radio" name="querytype" id="supportrequest" required>
           <label for="supportrequest">Support Request</label>
         </div>
-        <span>Please select a query type</span>
+        <span id="spantextquery">Please select a query type</span>
       </div>
       <div id="msgbox">
         <label for="messagebox">Message<span id="msgspan">*</span></label>
         <textarea name="messagebox" id="messagebox" required></textarea>
-        <span>This field is required</span>
+        <span id="spantextmsg">This field is required</span>
       </div>
       <div id="boxconsent">
         <input type="checkbox" name="consent" id="consent"  required>
         <label for="consent">I consent to being contacted by the team <span id="consentspan">*</span></label>
-        <span>To submit this form, please consent to being contacted</span>
+        <span id="spantextconsent">To submit this form, please consent to being contacted</span>
       </div>
       <div id="boxsubmit">
         <input type="button" value="Submit" id="submit" onclick="start()"></div>
