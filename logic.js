@@ -22,5 +22,9 @@ function start(){
   if(inputsname === '' || !validateName(inputsname)){
     inputsname.style.color="red";
   }
+
+  if(emailaddress === '' || !validateEmail(emailaddress)){
+    window.alert("Algo deu errado");
+  }
   
 }
