@@ -9,29 +9,40 @@
 </head>
 <body>
 
+  
+
   <div id="container">
+    <h1>Contact Us</h1>
     <div id="content">
-      <h1>Contact Us</h1>
+      
       <div id="name">
-        <label for="firstname">First Name<span class="namespan">*</span></label> 
-        <input type="text" name="firstname" id="firstname" minlength="2" maxlength="11"> <span class="spanErrorName">This field is required</span>
-        <label for="lastname">Last Name<span class="namespan">*</span></label>
-        <input type="text" name="lastname" id="lastname" required> <span class="spanErrorName">This field is required</span>
+        <div class="inputofname">
+          <label for="firstname">First Name<span class="namespan">*</span></label>
+          <input type="text" name="firstname" id="firstname" minlength="2" maxlength="11"> <span class="spanErrorName">This field is required</span>
+        </div>
+        <div class="inputofname">
+          <label for="lastname">Last Name<span class="namespan">*</span></label>
+          <input type="text" name="lastname" id="lastname" required> <span class="spanErrorName">This field is required</span>
+        </div>
       </div>
       <div id="email">
-        <label for="emailadress">Email Adress<span id="emailspan">*</span></label>
-        <input type="email" name="emailaddress" id="emailaddress" required>
-        <span id="spanemail">This field is required</span>
+        <div id="inputofemail">
+          <label for="emailadress">Email Adress<span id="emailspan">*</span></label>
+          <input type="email" name="emailaddress" id="emailaddress" required>
+          <span id="spanemail">This field is required</span>
+        </div>
       </div>
       <div id="querytype">
         <label for="radiobox">Query Type<span id="queryspan">*</span></label>
-        <div class="radiobox">
-          <input type="radio" name="querytype" id="generalenquiry" required>
-          <label for="generalenquiry">General Equiry</label>
-        </div>
-        <div class="radiobox">
-          <input type="radio" name="querytype" id="supportrequest" required>
-          <label for="supportrequest">Support Request</label>
+        <div id="inputofquery">
+          <div class="radiobox">
+            <input type="radio" name="querytype" id="generalenquiry" required>
+            <label for="generalenquiry">General Equiry</label>
+          </div>
+          <div class="radiobox">
+            <input type="radio" name="querytype" id="supportrequest" required>
+            <label for="supportrequest">Support Request</label>
+          </div>
         </div>
         <span id="spantextquery">Please select a query type</span>
       </div>

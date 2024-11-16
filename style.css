@@ -28,7 +28,6 @@ body{
 div#container{
     background-color: var(--white);
     width: 360px;
-    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -168,4 +167,50 @@ input#submit:hover{
     background-color: var(--lgreen);
     color: var(--dgreen);
     transition: 0.5s;
+}
+
+
+@media screen and (min-width: 900px){
+    #container{
+        min-width: 70%;
+    }
+
+    #content{
+        min-width: 70%;
+    }
+
+    #emailaddress{
+        min-width: 96%;
+    }
+
+    .radiobox{
+        width: 45%;
+    }
+
+    #inputofquery{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #messagebox{
+        min-width: 96%;
+    }
+
+    #boxconsent{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #boxsubmit{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1359px){
+    #name{
+        display: flex;
+        justify-content: space-between;
+    }
 }
