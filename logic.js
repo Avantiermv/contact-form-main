@@ -7,6 +7,7 @@ const query1 = document.getElementById('generalenquiry');
 const query2 = document.getElementById('supportrequest');
 const msg = document.getElementById('messagebox');
 const consent = document.getElementById('consent');
+const boxconfirmation = document.getElementById('confirmation');
 
 function start(){
   function validateEmail(email){
@@ -106,6 +107,9 @@ let hasError = false;
   }
 
   if(hasError == false){
-    window.alert("Tudo certo");
+    boxconfirmation.style.display="block";
+    setTimeout(() => {
+      boxconfirmation.style.opacity = "1"; 
+    }, 10);
   }
 }

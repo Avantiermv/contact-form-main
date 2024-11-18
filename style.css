@@ -59,6 +59,7 @@ input#firstname{
     border-style: solid;
     border-radius: 5px;
     border-color: var(--green);
+    cursor: pointer;
 }
 
 input#lastname{
@@ -69,6 +70,7 @@ input#lastname{
     border-style: solid;
     border-radius: 5px;
     border-color: var(--green);
+    cursor: pointer;
 }
 
 div#email{
@@ -83,10 +85,12 @@ input#emailaddress{
     border-style: solid;
     border-radius: 5px;
     border-color: var(--green);
+    cursor: pointer;
 }
 
 label{
     display: flex;
+    cursor: pointer;
 }
 
 span{
@@ -115,6 +119,7 @@ div.radiobox{
     border-style: solid;
     border-radius: 5px;
     border-color: var(--green);
+    
 }
 
 input#generalenquiry, #supportrequest{
@@ -170,9 +175,50 @@ input#submit:hover{
 }
 
 
+#confirmation{
+    display: none;
+    position: fixed;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out; 
+    z-index: 1;
+    width: 340px;
+    height: 100px;
+    margin: 3px;
+    background-color: var(--dgreen);
+    border-radius: 15px;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#msgconfirmation{
+    margin: 10px;
+    padding: 5px;
+}
+
+#h1confirm{
+    color: var(--white);
+    margin: 0px;
+    font-size: 16px;
+    display: flex;
+}
+
+p{
+    color: var(--nwhite);
+    margin: 5px;
+}
+
+img{
+    margin-right: 10px;
+}
+
 @media screen and (min-width: 900px){
     #container{
         min-width: 70%;
+    }
+
+    #confirmation{
+        position: relative;
     }
 
     #content{
@@ -194,6 +240,7 @@ input#submit:hover{
 
     #messagebox{
         min-width: 96%;
+        max-height: 100px;
     }
 
     #boxconsent{
@@ -212,5 +259,9 @@ input#submit:hover{
     #name{
         display: flex;
         justify-content: space-between;
+    }
+
+    #confirmation{
+        position: relative;
     }
 }
