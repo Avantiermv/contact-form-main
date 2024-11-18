@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./assets/images/Captura%20de%20tela_18-11-2024_105125_avantiermv.github.io.jpeg)
 
 ### Links
 
@@ -51,11 +51,11 @@ Users should be able to:
 
 ### What I learned
 
-
+What I think I've learned the most is how to use certain functions to validate certain things, how to use arrays and, on the style side, I'm slowly learning how to use flexbox.
 
 ### Continued development
 
-
+I'll keep going studying functions in JavaScript and Style in CSS.
 
 ## Author
 
